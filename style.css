@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
+:root{
+    --red:rgb(255, 72, 72);
+    --yellow: rgb(255, 255, 100);
+    --black:rgb(26, 26, 26);
+    --gray:rgb(156, 156, 156);
+    --white: white;
+    --bg: rgb(46, 46, 46);
+}
+
+
 body {
-  background-color: rgb(46, 46, 46);
+  background-color: var(--bg);
 
   font-family: "Anta", sans-serif;
   font-weight: 400;
@@ -13,36 +23,36 @@ header {
   text-align: center;
   justify-content: space-evenly;
   height: 100px;
-  color: white;
+  color: var(--white);
 }
 h1 {
   padding: 4px;
   margin: 4px;
-  color: rgb(255, 72, 72);
+  color: var(--red);
 }
 header p {
   margin: 0;
-  color: rgb(156, 156, 156);
+  color: var(--gray);
 }
 header span {
   font-size: 60px;
 }
 header button {
   padding: 12px;
-  background-color: rgb(156, 156, 156);
+  background-color: var(--gray);
   border: 0;
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
 }
 aside span {
-  background-color: white;
+  background-color: var(--white);
   font-size: 60px;
   padding: 20px 16px;
   border-radius: 12px;
-  color: rgb(26, 26, 26);
+  color: var(--black);
   width: 12%;
-  background-color: rgb(190, 190, 190);
+  background-color: var(--gray);
 }
 aside {
   margin-top: 12px;
@@ -52,23 +62,23 @@ aside {
   justify-content: space-evenly;
 }
 .red {
-  color: rgb(255, 72, 72);
+  color: var(--red);
 }
 .yellow{
-    color: yellow;
+    color: var(--yellow);
 }
 .active {
-  background-color: white;
+  background-color: var(--white);
 }
 main div span.card {
   display: block;
-  background-color: white;
+  background-color: var(--white);
   font-size: 60px;
   padding: 28px 0px;
   border-radius: 12px;
   width: 100%;
   font-weight: bold;
-  color: rgb(26, 26, 26);
+  color: var(--black);
 }
 main {
   margin-top: 20px;
@@ -86,7 +96,7 @@ main div {
   position: relative;
 }
 main button {
-  background-color: rgb(156, 156, 156);
+  background-color: var(--gray);
   width: 100%;
   font-size: 20px;
   padding: 0;
@@ -99,5 +109,16 @@ main button {
   top: 4px;
   right: 4px;
   font-size: 28px;
-  color: rgb(255, 72, 72);
+  color: var(--red);
 }
+@media only screen and (max-width: 600px) {
+    aside span{
+        font-size: 52px;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    .container{
+        width: 500px;
+        margin: auto;
+    }
+  }

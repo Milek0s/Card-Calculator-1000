@@ -76,7 +76,7 @@ const calculate = (thisCards) => {
   if (suma % 3) document.querySelector("#oczka").className = "red";
   else document.querySelector("#oczka").className = "";
 
-  document.querySelector("#punkty").innerHTML = punkty;
+  document.querySelector("#punkty").innerHTML = punkty+meldunki;
   if (punkty > oczka) document.querySelector("#punkty").className = "yellow";
   else document.querySelector("#punkty").className = "";
 };
