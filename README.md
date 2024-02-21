@@ -1,5 +1,5 @@
 # Card-Calculator-1000
 https://milek0s.github.io/Card-Calculator-1000/
 
-todo:
+* todo:
 -cursor pointer

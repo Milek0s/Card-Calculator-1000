@@ -73,7 +73,8 @@ const calculate = (thisCards) => {
   punkty = Math.round((oczka - 1) / 10) * 10;
 
   document.querySelector("#oczka").innerHTML = oczka;
-  if (suma % 3) document.querySelector("#oczka").className = "red";
+  if(suma===7) document.querySelector("#oczka").className = "blue";
+  else if (suma % 3) document.querySelector("#oczka").className = "red";
   else document.querySelector("#oczka").className = "";
 
   document.querySelector("#punkty").innerHTML = punkty+meldunki;
