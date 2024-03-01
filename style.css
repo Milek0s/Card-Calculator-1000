@@ -57,10 +57,10 @@ header button:active{
 aside span {
   background-color: var(--white);
   font-size: 60px;
-  padding: 20px 16px;
+  padding: 20px 0px;
   border-radius: 12px;
   color: var(--black);
-  width: 12%;
+  width: 18%;
   background-color: var(--gray);
   cursor: pointer;
 }
